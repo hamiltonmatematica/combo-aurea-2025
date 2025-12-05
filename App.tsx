@@ -302,8 +302,7 @@ const Pricing = () => {
   const discountData = {
     title: "Até 31/12",
     items: [
-      "30% de desconto para alunos novos",
-      "50% de desconto para alunos Áurea"
+      "30% de desconto para alunos novos"
     ]
   };
 
