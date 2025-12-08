@@ -251,14 +251,18 @@ const PricingCard = ({
   price,
   installment,
   discounts,
-  buttonText
+  buttonText,
+  vistaLink,
+  parceladoLink
 }: {
   title: string,
   subtitle: string,
   price: string,
   installment: string,
   discounts: { title: string, items: string[] },
-  buttonText: string
+  buttonText: string,
+  vistaLink: string,
+  parceladoLink: string
 }) => (
   <div className="flex flex-col h-full p-8 border border-gray-200 bg-white text-aurea-ebony shadow-lg transition-transform duration-300 hover:-translate-y-2 relative overflow-hidden group">
     {/* Top accent bar */}
@@ -288,12 +292,22 @@ const PricingCard = ({
 
     {/* Buttons container */}
     <div className="flex flex-col gap-3 mt-auto">
-      <button className="w-full py-4 font-bold uppercase tracking-wide bg-aurea-tangerine text-white hover:bg-orange-600 transition-colors text-sm shadow-md hover:shadow-lg">
-        {buttonText} à Vista
-      </button>
-      <button className="w-full py-4 font-bold uppercase tracking-wide border-2 border-aurea-blue text-aurea-blue hover:bg-aurea-blue hover:text-white transition-colors text-sm">
-        {buttonText} Parcelado
-      </button>
+      <a
+        href={vistaLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full py-4 font-bold uppercase tracking-wide bg-aurea-tangerine text-white hover:bg-orange-600 transition-colors text-sm shadow-md hover:shadow-lg text-center"
+      >
+        {buttonText} à vista com 30% de desconto
+      </a>
+      <a
+        href={parceladoLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full py-4 font-bold uppercase tracking-wide border-2 border-aurea-blue text-aurea-blue hover:bg-aurea-blue hover:text-white transition-colors text-sm text-center"
+      >
+        {buttonText} parcelado com 30% de desconto
+      </a>
     </div>
   </div>
 );
@@ -322,6 +336,8 @@ const Pricing = () => {
             installment="10 x R$ 390,00"
             discounts={discountData}
             buttonText="Quero o Extensivo"
+            vistaLink="https://www.asaas.com/c/xda8pn1pq7d883wd"
+            parceladoLink="https://www.asaas.com/c/7imuqxtm13zqzdec"
           />
           <PricingCard
             title="Combo Intensivo"
@@ -330,6 +346,8 @@ const Pricing = () => {
             installment="10 x R$ 190,00"
             discounts={discountData}
             buttonText="Quero o Intensivo"
+            vistaLink="https://www.asaas.com/c/o1l8e17xfs1dev23"
+            parceladoLink="https://www.asaas.com/c/f1pnlsxf1szf672a"
           />
           <PricingCard
             title="Combo Online"
@@ -338,6 +356,8 @@ const Pricing = () => {
             installment="10 x R$ 140,00"
             discounts={discountData}
             buttonText="Quero o Online"
+            vistaLink="https://www.asaas.com/c/dumd69djkjmp7ykk"
+            parceladoLink="https://www.asaas.com/c/ito6q9l9jts1p38y"
           />
         </div>
       </div>
