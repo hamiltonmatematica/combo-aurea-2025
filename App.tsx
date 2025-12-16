@@ -332,8 +332,8 @@ const Pricing = () => {
           <PricingCard
             title="Combo Extensivo"
             subtitle="Para quem quer evolução constante durante todo o ano"
-            price="R$ 3.400,00"
-            installment="10 x R$ 390,00"
+            price="R$ 3.000,00"
+            installment="10 x R$ 340,00"
             discounts={discountData}
             buttonText="Quero o Extensivo"
             vistaLink="https://www.asaas.com/c/xda8pn1pq7d883wd"
