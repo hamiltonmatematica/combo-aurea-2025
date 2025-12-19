@@ -116,7 +116,7 @@ const Hero = () => {
         <div className="max-w-5xl">
           <h1 className="font-display text-5xl md:text-8xl uppercase leading-[0.9] mb-6">
             Combo Matemática<br />
-            <span className="text-transparent stroke-white" style={{ WebkitTextStroke: '2px white' }}>e Redação Áurea 2025</span>
+            <span className="text-transparent stroke-white" style={{ WebkitTextStroke: '2px white' }}>e Redação Áurea 2026</span>
           </h1>
 
           <h2 className="text-xl md:text-3xl font-light mb-8 max-w-3xl text-gray-100 leading-normal">
@@ -373,7 +373,7 @@ const Reservation = () => {
           <div className="absolute top-0 right-0 w-64 h-64 bg-aurea-blue blur-3xl opacity-20 -translate-y-1/2 translate-x-1/2"></div>
 
           <h2 className="font-display text-4xl md:text-6xl uppercase mb-6 relative z-10">
-            Garanta sua vaga no<br />Combo Matemática e Redação 2025
+            Garanta sua vaga no<br />Combo Matemática e Redação 2026
           </h2>
           <p className="text-xl text-gray-300 mb-10 relative z-10">
             Quem reservar vaga até trinta e um de dezembro garante descontos especiais e benefícios exclusivos.
